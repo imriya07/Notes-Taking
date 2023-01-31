@@ -1,0 +1,27 @@
+<div class="form-container">
+   <div class="row">
+    <div class="col-md-4"></div>
+    <div class="col-md-4 mt-4">
+        <form #noteForm="ngForm" (ngSubmit)="onSubmit(noteForm)">
+            <div class="form-group">
+                <label>Title</label>
+                <input type="text" required class="form-control" name="title" [(ngModel)]="note.title">
+            </div>
+            <div class="form-group mt-4">
+                <label for="exampleFormControlTextarea1">Body</label>
+                <textarea class="form-control" id="exampleFormControlTextarea1" rows="5" name="body"[(ngModel)]="note.body"></textarea>
+              </div>
+        <div class="row mt-4">
+            <div class="col-md-5">
+                <button class="btn btn-primary" type="button" (click)="cancel()">Cancel</button>
+            </div>
+            <div class="col-md-5">
+                <button class="btn btn-success" type="submit" [disabled]="!noteForm.valid">Save</button>
+            </div>
+            <div class="col-md-2"></div>
+        </div>
+    </form>
+    </div>
+    <div class="col-md-4"></div>
+   </div>
+</div>

@@ -1,0 +1,22 @@
+.main-container{
+    display: flex;
+    flex-direction: column;
+}
+.form-control{
+    height: 50px;
+    border-radius: 10px;
+}
+.fa-sharp{
+    height: 28px;
+    color: gray;
+}
+app-note-card{
+    display: block;
+    margin-bottom: 22px;
+}
+.add{
+    width: 100%;
+    background-color: rgb(3, 119, 235);
+    border: none;
+    font-size: 20px;
+}
